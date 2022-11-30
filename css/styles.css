@@ -7,6 +7,7 @@
 	--button-background-color: #e7e9fc;
 	--alternative-text-color: #ffffff;
 	--active-hero-button: #404bbf;
+	--border-box-color: #8e8f99;
 }
 /* main page */
 body {
@@ -299,6 +300,35 @@ img {
 
 	height: 16px;
 	width: 16px;
+}
+/* customers */
+
+.customers .heading {
+	margin-bottom: 72px;
+	color: var(--secondary-text-color);
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	text-align: center;
+}
+.clients {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 24px;
+}
+.customers .box {
+	height: 88px;
+	width: 168px;
+	padding: 16px 32px;
+	border: 1px solid var(--border-box-color);
+	border-radius: 4px;
+}
+.icon-logo {
+	display: block;
+	height: 56px;
+	width: 104px;
 }
 /* footer */
 .footer {
