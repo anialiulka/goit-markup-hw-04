@@ -163,6 +163,11 @@ img {
 	line-height: 1.2;
 	cursor: pointer;
 }
+.hero-btn:hover,
+.hero-btn:focus {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 4px;
+}
 .hero-btn:active {
 	background-color: var(--active-hero-button);
 }
@@ -319,28 +324,32 @@ img {
 	align-items: flex-start;
 	gap: 24px;
 }
-.clients .link:hover,
-.clients .link:focus {
-	color: #4d5ae5;
-}
-.customers .box {
+
+.clients-contacts {
+	display: flex;
 	height: 88px;
 	width: 168px;
-	padding: 16px 32px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	border: 1px solid var(--border-box-color);
 	border-radius: 4px;
 }
+.clients-contacts:hover,
+.clients-contacts:focus {
+	border: 1px solid var(--logo-hover-color);
+}
+
 .icon-logo {
 	display: block;
 	height: 56px;
 	width: 104px;
 	fill: var(--border-box-color);
 }
-
-.box:focus,
-.icn-logo:hover {
+.icon-logo:hover {
 	fill: var(--logo-hover-color);
 }
+
 /* footer */
 .footer {
 	padding-top: 100px;
@@ -349,7 +358,12 @@ img {
 }
 .container.footer {
 	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 120px;
 }
+
 .logo.bottom {
 	display: block;
 	margin-bottom: 16px;
@@ -360,7 +374,7 @@ img {
 	line-height: 1.5;
 }
 .footer-heading {
-	display: inline-block;
+	display: block;
 	margin-bottom: 16px;
 	color: var(--alternative-text-color);
 	font-size: 16px;
@@ -371,8 +385,8 @@ img {
 .our-social {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+	justify-content: center;
+	align-items: flex-start;
 }
 .media {
 	display: flex;
@@ -424,6 +438,8 @@ img {
 .portfolio-btn:focus {
 	background-color: #4d5ae5;
 	color: var(--alternative-text-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 4px;
 }
 /* projects */
 .list.projects {
@@ -435,8 +451,13 @@ img {
 }
 .projects > .item {
 	flex-basis: calc((100% - 48px) / 3);
+	border: 0.5px solid var(--secondary-background-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
+.projects > .item:hover {
+	border: 0.5px solid var(--secondary-background-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .projects .project-category {
 	color: var(--primary-text-color);
 	line-height: 1.5;
