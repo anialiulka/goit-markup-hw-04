@@ -324,30 +324,31 @@ img {
 	align-items: flex-start;
 	gap: 24px;
 }
-
-.clients-contacts {
-	display: flex;
+.clients li {
 	height: 88px;
 	width: 168px;
-	flex-direction: row;
+}
+.clients-contacts {
+	display: flex;
+	width: 100%;
+	height: 100%;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid var(--border-box-color);
 	border-radius: 4px;
+	color: var(--border-box-color);
 }
 .clients-contacts:hover,
 .clients-contacts:focus {
 	border: 1px solid var(--logo-hover-color);
+	color: var(--logo-hover-color);
 }
 
 .icon-logo {
 	display: block;
 	height: 56px;
 	width: 104px;
-	fill: var(--border-box-color);
-}
-.icon-logo:hover {
-	fill: var(--logo-hover-color);
+	fill: currentColor;
 }
 
 /* footer */
