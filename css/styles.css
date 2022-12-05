@@ -192,7 +192,10 @@ img {
 	gap: 24px;
 }
 .values .rectangle {
-	padding: 24px 100px;
+	height: 112px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 8px;
 	background-color: var(--secondary-background-color);
 	border-radius: 4px;
@@ -455,7 +458,10 @@ img {
 	border: 0.5px solid var(--secondary-background-color);
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.projects > .item:hover {
+.projects-examples {
+	display: block;
+}
+.projects-examples:hover {
 	border: 0.5px solid var(--secondary-background-color);
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
